@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weightlifting Log</title>
+    <script defer src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
+        input, button { display: block; margin: 10px 0; padding: 8px; }
+        pre { background: #f4f4f4; padding: 10px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>Weightlifting Log</h1>
+
+    <h3>Create an Exercise</h3>
+    <input type="text" id="exerciseName" placeholder="Exercise Name">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="sets" placeholder="Sets">
+    <input type="number" id="reps" placeholder="Reps">
+    <button onclick="logExercise()">Submit</button>
+
+    <h3>Exercise History</h3>
+    <input type="text" id="historyName" placeholder="Exercise Name">
+    <button onclick="getExerciseHistory()">Get History</button>
+
+    <h3>Response</h3>
+    <pre id="response">No data yet.</pre>
+</body>
+</html>
