@@ -1,4 +1,4 @@
-const API_URL = "https://your-worker-url.workers.dev"; // Update with Cloudflare Worker URL
+const API_URL = "http://localhost:8787"; //Local dev
 
 async function logExercise() {
     const data = {
